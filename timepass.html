@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watercolor Effect Background</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, #ff0000, #0000ff, #00ff00);
+        }
+
+        #ripple {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.4) 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            transition: transform 0.5s, opacity 0.5s;
+            mix-blend-mode: screen;
+        }
+
+        .boat {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-image: url('boat.png');
+            background-size: contain;
+            pointer-events: none;
+            transition: transform 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div id="background"></div>
+    <div id="ripple"></div>
+    <div id="boat" class="boat"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var background = document.getElementById('background');
+            var ripple = document.getElementById('ripple');
+            var boat = document.getElementById('boat');
+
+            var isDragging = false;
+            var mouseX = 0;
+            var mouseY = 0;
+
+            background.addEventListener('mousedown', function(event) {
+                isDragging = true;
+                mouseX = event.clientX;
+                mouseY = event.clientY;
+            });
+
+            document.addEventListener('mouseup', function() {
+                isDragging = false;
+            });
+
+            document.addEventListener('mousemove', function(event) {
+                if (isDragging) {
+                    var dx = event.clientX - mouseX;
+                    var dy = event.clientY - mouseY;
+                    mouseX = event.clientX;
+                    mouseY = event.clientY;
+
+                    ripple.style.transform = 'translate(' + mouseX + 'px, ' + mouseY + 'px)';
+                    ripple.style.opacity = '1';
+
+                    boat.style.transform = 'translate(' + (mouseX - 50) + 'px, ' + (mouseY - 50) + 'px)';
+                }
+            });
+
+            background.addEventListener('mouseleave', function() {
+                isDragging = false;
+                ripple.style.opacity = '0';
+            });
+        });
+    </script>
+</body>
+</html>

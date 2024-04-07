@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trinity-Events</title>
+<link rel="icon" type="image/x-icon" href="logobg.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        color: white; /* Set default text color to white */
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    #bg-video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        filter: brightness(30%);
+    }
+    .navbar {
+        overflow: hidden;
+        font-size: 24px; /* Big text */
+        padding-top: 5px;
+        font-weight: bold;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .navbar img {
+        float: left;
+        height: 50px; /* Adjust height as needed */
+        padding: 5px;
+    }
+    .navbar a {
+        float: right;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+    .content {
+        text-align: center;
+        padding-top: 40px; /* Adjust as needed */
+    }
+    .event-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center the flex items horizontally */
+    }
+    .event {
+        margin: 20px;
+        text-align: center;
+    }
+    .event img {
+        width: 350px; /* Adjust image width */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10px; /* Rounded corners for aesthetics */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        transition: transform 0.3s ease-in-out; /* Smooth transition effect */
+    }
+    .event img:hover {
+        transform: scale(1.1); /* Increase size on hover */
+    }
+    .event-name {
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .navbar .home:hover,
+    .navbar .team:hover,
+    .navbar .contactus:hover,
+    .navbar .events:hover {
+        color: #41C9E2; /* Change text color on hover */
+        transform: scale(1.1);
+    }
+    .event-name:hover, .event:hover {
+        color: #41C9E2;
+    }
+    .navbar .l:hover{
+    transform: scale(1.1);
+  }
+</style>
+</head>
+<body>
+<video id="bg-video" autoplay muted loop>
+    <source src="No Copyright Video, Background, Green Screen, Motion Graphics, Animated Background, Copyright Free.mp4"video.mp4">
+</video>
+
+<div class="navbar">
+    <a class="l" href="index.html" style="float: left;"> <!-- Wrap the logo in an anchor tag with the homepage URL -->
+        <img src="logobg.png" alt="Logo">
+    </a>
+    <a class="contactus" href="contact.html">CONTACT US</a>
+    <a class="team" href="member.html">TEAM</a>
+    <a class="events" style="color: #E72929;" href="events.html">EVENTS</a>
+    <a class="home" href="index.html">HOME</a>
+</div>
+
+<div class="content">
+    <h1 style="font-size: 50px;">EVENTS</h1>
+    <div class="event-container">
+        <div class="event">
+            <a href="https://www.instagram.com/trinity.aiclub/p/CyG9qoSIpOZ/?img_index=1" target="_blank">
+                <img src="sessionin.jpg" alt="Event 1">
+                <div class="event-name">Introductory Session</div>
+            </a>
+        </div>
+        <div class="event">
+            <a href="https://www.instagram.com/trinity.aiclub/p/C0Cd2-OMWkQ/?img_index=1" target="_blank">
+                <img src="masterclass.png" alt="Event 2">
+                <div class="event-name">Master Class</div>
+            </a>
+        </div>
+        <div class="event">
+            <a href="https://www.instagram.com/trinity.aiclub/p/C0GlUE2Mk8s/" target="_blank">
+                <img src="botx.jpg" alt="Event 2">
+                <div class="event-name">Bot-X</div>
+            </a>
+        </div>
+        <div class="event">
+            <a href="https://www.instagram.com/trinity.aiclub/p/C35tLTeMmGX/?img_index=1" target="_blank">
+                <img src="post.png" alt="Event 3">
+                <div class="event-name">Pixel Pioneer</div>
+            </a>
+        </div>
+        <div class="event">
+            <a href="https://www.instagram.com/trinity.aiclub/p/C4qrz32IO33/" target="_blank">
+                <img src="train.jpg" alt="Event 4">
+                <div class="event-name">Train-IT</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

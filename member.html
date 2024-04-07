@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trinity-Team</title>
+    <link rel="icon" type="image/x-icon" href="logobg.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", sans-serif;
+            color: white; /* Set default text color to white */
+        }
+
+        #bg-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            filter: brightness(30%);
+        }
+
+        .navbar {
+            overflow: hidden;
+            font-size: 24px;
+            padding-top: 5px;
+            font-weight: bold;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .navbar img {
+            float: left;
+            height: 50px;
+            padding: 5px;
+        }
+        .navbar .l:hover{
+    transform: scale(1.1);
+  }
+        .navbar a {
+            font-family: "Inter", sans-serif;
+            float: right;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar .home:hover,
+  .navbar .team:hover,
+  .navbar .contactus:hover,
+  .navbar .events:hover {
+    color: #41C9E2; /* Change text color on hover */
+    transform: scale(1.1);
+  }
+    
+        .container {
+            margin: 80px auto 20px;
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .member {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Box shadow for depth */
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+
+        .member:hover {
+            transform: translateY(-5px);
+        }
+
+        .member h2 {
+            margin-top: 0;
+            font-size: 20px;
+            color: #41C9E2;
+        }
+
+        .member p {
+            margin: 0;
+            font-size: 14px;
+            color: white;
+            margin-bottom: 10px;
+        }
+        .member img {
+    width: 150px;
+    height: 150px; /* Set a fixed height */
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover; /* Ensure the image maintains aspect ratio */
+}
+
+
+        .heading {
+            width: 100%;
+            text-align: center;
+            /* margin-bottom: 0px; */
+        }
+
+        .heading h1 {
+            font-size: 54px;
+            color: white;
+        }
+
+
+
+        /* For Webkit browsers like Chrome and Safari */
+::-webkit-scrollbar {
+  width: 0px; /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(1,17,22); /* color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(1,17,22); /* color of the thumb */
+  border-radius: 6px; /* roundness of the thumb */
+}
+    </style>
+</head>
+<body>
+    <video id="bg-video" autoplay muted loop>
+        <source src="No Copyright Video, Background, Green Screen, Motion Graphics, Animated Background, Copyright Free.mp4" type="video/mp4">
+    </video>
+
+    <div class="navbar">
+        <a class="l" href="index.html" style="float: left;"> <!-- Wrap the logo in an anchor tag with the homepage URL -->
+            <img src="logobg.png" alt="Logo">
+        </a>
+        <a class="contactus" href="contact.html">CONTACT US</a>
+        <a class="team" href="member.html" style="color: #E72929;">TEAM</a>
+        <a class="events" href="events.html">EVENTS</a>
+        <a class="home" href="index.html">HOME</a>
+    </div>
+
+    <div class="container">
+        <div class="heading">
+            <h1>Secretary</h1>
+        </div>
+        
+        <div class="member">
+            <img src="harsh.jpg" alt="Harsh Bisht">
+            <h2>Harsh Bisht</h2>
+            
+            <p><strong>Email</strong> harshbisht_21065@aitpune.edu.in</p>
+            <p><strong>Phone: </strong>9103204360</p>
+        </div>
+
+        <div class="member">
+            <img src="kurmi.jpg" alt="Aditya Kurmi">
+            <h2>Aditya Kurmi</h2>
+            
+            <p><strong>Email</strong> adityakurmi_21188@aitpune.edu.in</p>
+            <p><strong>Phone: </strong>8878758653</p>
+        </div>
+        
+    </div>
+
+    <div class="container">
+        <div class="heading">
+            <h1>Joint Secretary</h1>
+        </div>
+        
+        <div class="member">
+            <img src="nitin.jpg" alt="Nitin Mahala">
+            <h2>Nitin Mahala</h2>
+            
+            <p><strong>Email</strong> nitinmahala_22121@aitpune.edu.in</p>
+            <p><strong>Phone: </strong> 9462137180</p>
+        </div>
+
+        <div class="member">
+            <img src="himanshu.jpg" alt="himanshu">
+            <h2>Himanshu</h2>
+            
+            <p><strong>Email</strong> himanshu_22134@aitpune.edu.in</p>
+            <p><strong>Phone: </strong>8824746038</p>
+        </div>
+        <div class="member">
+            <img src="pol.jpg" alt="Prathmesh Pol">
+            <h2>Prathamesh Pol</h2>
+            
+            <p><strong>Email</strong> prathmeshpol_22077@aitpune.edu.in/p>
+            <p><strong>Phone: </strong>9322344270</p>
+        </div>
+        <div class="member">
+            <img src="tanisha.jpg" alt="Tanisha">
+            <h2>Tanisha</h2>
+            
+            <p><strong>Email</strong> tanishasharma_22906@aitpune.edu.in</p>
+            <p><strong>Phone: </strong>1234567890</p>
+        </div>
+        <div class="member">
+            <img src="tauFEEQ.jpg" alt="Taufeeq">
+            <h2>Taufeeq Syed</h2>
+            
+            <p><strong>Email</strong> taufeeqsyed_22150@aitpune.edu.in</p>
+            <p><strong>Phone: </strong> 7666132393</p>
+        </div>
+        <div class="member">
+            <img src="aryan.jpg" alt="aryan">
+            <h2>Aryan</h2>
+            
+            <p><strong>Email</strong> aryansingh_22333@aitpune.edu.in</p>
+            <p><strong>Phone: </strong> 8830562972</p>
+        </div>
+
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - Club Name</title>
+
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", sans-serif;
+            color: white; /* Set default text color to white */
+        }
+
+        #bg-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            filter: brightness(30%);
+        }
+
+        .navbar {
+            overflow: hidden;
+            font-size: 24px;
+            padding-top: 5px;
+            font-weight: bold;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .navbar img {
+            float: left;
+            height: 50px;
+            padding: 5px;
+        }
+
+        .navbar a {
+            font-family: "Inter", sans-serif;
+            float: right;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar .home:hover,
+  .navbar .team:hover,
+  .navbar .contactus:hover,
+  .navbar .events:hover {
+    color: #41C9E2; /* Change text color on hover */
+    transform: scale(1.1);
+  }
+  .navbar .l:hover{
+    transform: scale(1.1);
+  }
+
+  /* Remove blue color from hyperlinks */
+  .info-box ul li a {
+    color: inherit; /* Inherit text color from parent */
+    text-decoration: none; /* Remove underline */
+    font-size: 24px; /* Adjusted font size */
+    font-weight: bold; /* Set font weight to bold */
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s; /* Add transition effect */
+  }
+
+  /* Change color on hover for home link */
+  .navbar .home:hover,
+  .navbar .team:hover,
+  .navbar .contactus:hover,
+  .navbar .events:hover {
+    color: #41C9E2; /* Change text color on hover */
+    transform: scale(1.1);
+  }
+
+  /* Increase size on hover */
+  .info-box ul li:hover a {
+    transform: scale(1.1); /* Increase size by 10% */
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    position: relative; /* Set the container as relative for absolute positioning */
+  }
+
+  .info-box {
+    /* background-color: rgba(0, 0, 0, 0.5); Transparent black background */
+    padding: 40px;
+    border-radius: 20px;
+    width: 600px; /* Increase width for larger box */
+    position: relative; /* Set the info-box as relative for absolute positioning */
+    overflow: hidden; /* Ensure content doesn't overflow */
+  }
+
+  .info-box h2 {
+    font-size: 56px; /* Increase font size */
+    margin-bottom: 50px;
+    margin-top: 0px; /* Adjusted margin top */
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 2; 
+    position: relative;
+}
+
+  .info-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative; /* Set the ul as relative for absolute positioning */
+    z-index: 2; /* Ensure the content is above the overlay */
+  }
+
+  .info-box ul li {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-size: 30px; /* Adjusted font size */
+    display: flex;
+    align-items: center;
+  }
+
+  .info-box ul li img {
+    width: 30px; /* Increase icon size */
+    height: 30px; /* Increase icon size */
+    margin-right: 20px;
+  }
+
+  .image-box img {
+    width: 500px; /* Adjust image width */
+    height: auto;
+    border-radius: 20px;
+  }
+
+  /* Glassy overlay */
+  .glassy-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    z-index: 1; /* Ensure it's above other content */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+  }
+</style>
+</head>
+<body>
+  <video id="bg-video" autoplay muted loop>
+    <source src="No Copyright Video, Background, Green Screen, Motion Graphics, Animated Background, Copyright Free.mp4" video.mp4">
+  </video>
+
+  <div class="navbar">
+    <a class="l" href="index.html" style="float: left;"> <!-- Wrap the logo in an anchor tag with the homepage URL -->
+        <img src="logobg.png" alt="Logo">
+    </a>
+    <a class="contactus" style="color: #E72929;" href="contact.html">CONTACT US</a>
+    <a class="team" href="member.html">TEAM</a>
+    <a class="events" href="events.html">EVENTS</a>
+    <a class="home" href="index.html">HOME</a>
+  </div>
+
+  <div class="container">
+    <div class="info-box">
+      <h2>Contact Us</h2>
+      <div class="glassy-overlay"></div> <!-- Glassy overlay -->
+      <ul>
+        <li><img src="free-location-icon-2955-thumb.png" alt="Location Icon"><a href="https://maps.app.goo.gl/LwfWKMzvvFEBQBvQA" target="_blank">Army Institute Of Technology, Pune</a></li>
+       
+        <li><img src="mail-icon-2048x2048-525ey8hu.png" alt="Email Icon"><a href="mailto:Trinity.aiclub@gmail.com">Trinity.aiclub@gmail.com</a></li>
+        <li><img src="inlogo.png" alt="LinkedIn Icon"><a href="https://www.linkedin.com/company/trinityaiclub/" target="_blank">Trinity</a></li>
+        <li><img src="Instagram_icon.png.webp" alt="Instagram Icon"><a href="https://www.instagram.com/trinity.aiclub/" target="_blank">Trinity.aiclub</a></li>
+        <li><img src="X_logo.jpg" alt="Twitter Icon"><a href="https://twitter.com/trinityaiclub" target="_blank">Trinityaiclub</a></li>
+      </ul>
+    </div>
+    <div class="image-box">
+      <img src="logobg.png" alt="Club Image">
+    </div>
+  </div>
+
+
+</body>
+</html>
