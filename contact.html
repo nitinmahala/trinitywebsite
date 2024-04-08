@@ -246,53 +246,79 @@
 </style>
 </head>
 <body>
-  <video id="bg-video" autoplay muted loop>
-    <source src="No Copyright Video, Background, Green Screen, Motion Graphics, Animated Background, Copyright Free.mp4" video.mp4">
-  </video>
-
-  <div class="navbar">
-    <a class="l" href="index.html" style="float: left;">
-        <img src="logobg.png" alt="Logo">
-    </a>
-    <a class="contactus" style="color: #E72929;" href="contact.html">CONTACT US</a>
-    <a class="team" href="member.html">TEAM</a>
-    <a class="events" href="events.html">EVENTS</a>
-    <a class="home" href="index.html">HOME</a>
-  </div>
-
-  <div class="container">
-    <div class="info-box">
-      <h2>Contact Us</h2>
-      <div class="glassy-overlay"></div>
-      <ul>
-        <li><img src="free-location-icon-2955-thumb.png" alt="Location Icon"><a href="https://maps.app.goo.gl/LwfWKMzvvFEBQBvQA" target="_blank">Army Institute Of Technology, Pune</a></li>
-       
-        <li><img src="mail-icon-2048x2048-525ey8hu.png" alt="Email Icon"><a href="mailto:Trinity.aiclub@gmail.com">Trinity.aiclub@gmail.com</a></li>
-        <li><img src="inlogo.png" alt="LinkedIn Icon"><a href="https://www.linkedin.com/company/trinityaiclub/" target="_blank">Trinity</a></li>
-        <li><img src="Instagram_icon.png.webp" alt="Instagram Icon"><a href="https://www.instagram.com/trinity.aiclub/" target="_blank">Trinity.aiclub</a></li>
-        <li><img src="X_logo.jpg" alt="Twitter Icon"><a href="https://twitter.com/trinityaiclub" target="_blank">Trinityaiclub</a></li>
-      </ul>
+    <video id="bg-video" autoplay muted loop>
+      <source src="No Copyright Video, Background, Green Screen, Motion Graphics, Animated Background, Copyright Free.mp4" type="video/mp4">
+    </video>
+  
+    <div class="navbar">
+      <a class="l" href="index.html" style="float: left;">
+          <img src="logobg.png" alt="Logo">
+      </a>
+      <a class="contactus" style="color: #E72929;" href="contact.html">CONTACT US</a>
+      <a class="team" href="member.html">TEAM</a>
+      <a class="events" href="events.html">EVENTS</a>
+      <a class="home" href="index.html">HOME</a>
     </div>
-    <div class="image-box">
-      <img src="logobg.png" alt="Club Image">
+  
+    <div class="container">
+      <div class="info-box">
+        <h2>Contact Us</h2>
+        <div class="glassy-overlay"></div>
+        <ul>
+          <li><img src="free-location-icon-2955-thumb.png" alt="Location Icon"><a href="https://maps.app.goo.gl/LwfWKMzvvFEBQBvQA" target="_blank">Army Institute Of Technology, Pune</a></li>
+          <li><img src="mail-icon-2048x2048-525ey8hu.png" alt="Email Icon"><a href="mailto:Trinity.aiclub@gmail.com">Trinity.aiclub@gmail.com</a></li>
+          <li><img src="inlogo.png" alt="LinkedIn Icon"><a href="https://www.linkedin.com/company/trinityaiclub/" target="_blank">Trinity</a></li>
+          <li><img src="Instagram_icon.png.webp" alt="Instagram Icon"><a href="https://www.instagram.com/trinity.aiclub/" target="_blank">Trinity.aiclub</a></li>
+          <li><img src="X_logo.jpg" alt="Twitter Icon"><a href="https://twitter.com/trinityaiclub" target="_blank">Trinityaiclub</a></li>
+        </ul>
+      </div>
+      <div class="image-box">
+        <img src="logobg.png" alt="Club Image">
+      </div>
     </div>
-  </div>
+  
+    <!-- Suggestion box section -->
+    <div class="suggestion-box">
+      <h3>Have a suggestion? Let us know !</h3>
+      <div class="suggestion-form">
+        <!-- <form > -->
+            <form action="https://api.web3forms.com/submit" method="POST">
 
-  <!-- Suggestion box section -->
-  <div class="suggestion-box">
-    <h3>Have a suggestion? Let us know !</h3>
-    <div class="suggestion-form">
-      <form>
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="suggestion" placeholder="Your Suggestion" required></textarea>
-        <input type="submit" value="SUBMIT">
-      </form>
+                <!-- Replace with your Access Key -->
+                <input type="hidden" name="access_key" value="35d0f856-77e6-4ac0-94e5-9f21ee930536">
+
+          <input type="text" name="name" id="name" placeholder="Your Name" required>
+          <input type="email" name="email" id="email" placeholder="Your Email" required>
+          <textarea name="suggestion" id="suggestion" placeholder="Your Suggestion" required></textarea>
+          <input type="submit" value="SUBMIT">
+        </form>
+      </div>
     </div>
-  </div>
+  
+    <footer>
+      <p>© 2024 Trinity. All Rights Reserved.</p>
+    </footer>
+  
 
-  <footer>
-    <p>© 2024 Trinity. All Rights Reserved.</p>
-  </footer>
-</body>
-</html>
+
+
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "clashwithclaser1@gmail.com",
+            Password : "73DC09FBF20FC9EE2E0BD24AF5FFB9D9314C",
+            To: 'clashwithclaser1@gmail.com', 
+            From: document.getElementById('email').value,
+            Subject: "New Suggestion",
+            Body: "Name: " + document.getElementById('name').value + "<br>" + "Suggestion: " + document.getElementById('suggestion').value
+        }).then(
+            message => alert('Thanks For Your Valuable Suggestion')
+        );
+    }
+
+</script> -->
+
+  </body>
+  </html>
