@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Events-Trinity</title>
+<title>Trinity-Events</title>
 <link rel="icon" type="image/x-icon" href="logobg.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -84,12 +84,14 @@
         font-weight: bold;
     }
     .navbar .home:hover,
-    .navbar .team:hover,
-    .navbar .contactus:hover,
-    .navbar .events:hover {
-        color: #41C9E2; /* Change text color on hover */
-        transform: scale(1.1);
-    }
+.navbar .team:hover,
+.navbar .contactus:hover,
+.navbar .events:hover,
+.navbar .resources:hover
+{
+color: #41C9E2; /* Change text color on hover */
+transform: scale(1.1);
+}
     .event-name:hover, .event:hover {
         color: #41C9E2;
     }
@@ -123,9 +125,7 @@
             line-height: 60px; /* Adjust this value to vertically center the text */
             height: 60px; /* Adjust this value to vertically center the text */
         }
-        .event-name:hover + a img {
-            transform: rotateY(180deg); /* Rotate image 180 degrees on hover */
-        }
+
 </style>
 </head>
 <body>
@@ -138,6 +138,7 @@
         <img src="logobg.png" alt="Logo">
     </a>
     <a class="contactus" href="contact.html">CONTACT US</a>
+    <a class="resources"  href="resources.html">RESOURCES</a>
     <a class="team" href="member.html">TEAM</a>
     <a class="events" style="color: #E72929;" href="events.html">EVENTS</a>
     <a class="home" href="index.html">HOME</a>
