@@ -283,10 +283,9 @@
       <h3>Have a suggestion? Let us know !</h3>
       <div class="suggestion-form">
         <!-- <form > -->
-            <form action="https://api.web3forms.com/submit" method="POST">
+            <form action="https://script.google.com/macros/s/AKfycbzbRW6YUaHOFNCXAkK4WDJwv8yKUNOonOs8glu6BeythGT-Yk3di29yRBuDRWZh9uVh1g/exec" method="POST">
 
-                <!-- Replace with your Access Key -->
-                <input type="hidden" name="access_key" value="35d0f856-77e6-4ac0-94e5-9f21ee930536">
+
 
           <input type="text" name="name" id="name" placeholder="Your Name" required>
           <input type="email" name="email" id="email" placeholder="Your Email" required>
@@ -303,23 +302,30 @@
 
 
 
-    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-    function sendEmail(){
-        Email.send({
-            Host : "smtp.elasticemail.com",
-            Username : "clashwithclaser1@gmail.com",
-            Password : "73DC09FBF20FC9EE2E0BD24AF5FFB9D9314C",
-            To: 'clashwithclaser1@gmail.com', 
-            From: document.getElementById('email').value,
-            Subject: "New Suggestion",
-            Body: "Name: " + document.getElementById('name').value + "<br>" + "Suggestion: " + document.getElementById('suggestion').value
-        }).then(
-            message => alert('Thanks For Your Valuable Suggestion')
-        );
-    }
-
-</script> -->
+    <script>
+      const form = document.forms['contact-form'];
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault(); // Prevent the default form submission behavior
+    
+        // Get form input values
+        const name = form.elements['name'].value;
+        const email = form.elements['email'].value;
+        const suggestion = form.elements['suggestion'].value;
+    
+        // Validate form inputs (you can add more validation as per your requirement)
+        if (name && email && suggestion) {
+          // Display alert message upon successful submission
+          alert("Thank you! Your suggestion has been submitted successfully.");
+          form.reset(); // Reset the form fields
+        } else {
+          // Display an error message if any field is empty
+          alert("Please fill in all fields.");
+        }
+      });
+    </script>
+    
+    
 
   </body>
   </html>
