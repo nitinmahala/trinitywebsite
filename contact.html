@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us - Trinity</title>
+<title>Trinity-Contact Us</title>
 <link rel="icon" type="image/x-icon" href="logobg.ico">
 
 <style>
@@ -74,12 +74,14 @@
 
     /* Change color on hover for home link */
     .navbar .home:hover,
-    .navbar .team:hover,
-    .navbar .contactus:hover,
-    .navbar .events:hover {
-        color: #41C9E2; /* Change text color on hover */
-        transform: scale(1.1);
-    }
+.navbar .team:hover,
+.navbar .contactus:hover,
+.navbar .events:hover,
+.navbar .resources:hover
+{
+color: #41C9E2; /* Change text color on hover */
+transform: scale(1.1);
+}
 
     /* Increase size on hover */
     .info-box ul li:hover a {
@@ -256,6 +258,7 @@
           <img src="logobg.png" alt="Logo">
       </a>
       <a class="contactus" style="color: #E72929;" href="contact.html">CONTACT US</a>
+      <a class="resources"  href="resources.html">RESOURCES</a>
       <a class="team" href="member.html">TEAM</a>
       <a class="events" href="events.html">EVENTS</a>
       <a class="home" href="index.html">HOME</a>
@@ -283,9 +286,11 @@
       <h3>Have a suggestion? Let us know !</h3>
       <div class="suggestion-form">
         <!-- <form > -->
-            <form action="https://script.google.com/macros/s/AKfycbzbRW6YUaHOFNCXAkK4WDJwv8yKUNOonOs8glu6BeythGT-Yk3di29yRBuDRWZh9uVh1g/exec" method="POST">
+            <form action="https://api.web3forms.com/submit" method="POST">
 
-               
+                <!-- Replace with your Access Key -->
+                <input type="hidden" name="access_key" value="35d0f856-77e6-4ac0-94e5-9f21ee930536">
+
           <input type="text" name="name" id="name" placeholder="Your Name" required>
           <input type="email" name="email" id="email" placeholder="Your Email" required>
           <textarea name="suggestion" id="suggestion" placeholder="Your Suggestion" required></textarea>
@@ -301,30 +306,7 @@
 
 
 
-    <script>
-      const form = document.forms['contact-form'];
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault(); // Prevent the default form submission behavior
-    
-        // Get form input values
-        const name = form.elements['name'].value;
-        const email = form.elements['email'].value;
-        const suggestion = form.elements['suggestion'].value;
-    
-        // Validate form inputs (you can add more validation as per your requirement)
-        if (name && email && suggestion) {
-          // Display alert message upon successful submission
-          alert("Thank you! Your suggestion has been submitted successfully.");
-          form.reset(); // Reset the form fields
-        } else {
-          // Display an error message if any field is empty
-          alert("Please fill in all fields.");
-        }
-      });
-    </script>
-    
-    
+
 
   </body>
   </html>
